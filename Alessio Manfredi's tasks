@@ -1,0 +1,10 @@
+3) Scelta architettura
+
+-test 2x2 maxpool only instead of adapting to previous output (last row/column might be deleted but try anyway)
+-test different optimizers
+-test different hyperparameters for them (?)
+-test more dropout and with higher p
+-add more (conv) layers
+-add more neurons in final dense layers
+-add more regularization
+-add data augmentation (rotation,flips,brightness,...)
