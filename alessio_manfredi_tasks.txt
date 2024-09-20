@@ -1,4 +1,4 @@
-3) Scelta architettura
+3) Architectural choices
 
 -test 2x2 maxpool only instead of adapting to previous output (last row/column might be deleted but try anyway)
 -test different optimizers
