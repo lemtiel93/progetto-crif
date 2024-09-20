@@ -1,0 +1,9 @@
+Definizione del problema: realizzare un modello riconoscimento emozioni in immagini col fine di riconoscere le emozioni con alta precisione
+1. Comprensione dati e del loro bilanciamento
+2. Preprocessing dei dati: ridimensionamento e normalizzazione. (valutazione su utilizzo di data augmention)
+3. Scelta architettura del modello CNN
+4. Addestramento del modello per tentativi e errori, con scelta di ottimizzatore e funzione di perdita
+5. Valutazione del modello con metriche tipo accuracy, matrice confusione,ecc..
+6. Test e validazione finale. Stima e valutazione performance.
+7. Presentazione visiva del modello. 
+8. Documentazione e report tecnico di scelte fatte e risultati ottenuti
