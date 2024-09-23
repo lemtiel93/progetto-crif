@@ -13,7 +13,7 @@ class ImageLoader:
     def load_image(self, image_path): # Funzione che apre immagine e la normalizza
         image = Image.open(image_path)
         image_array = img_to_array(image)
-        image_array /= 255
+        #image_array /= 255
         return image_array
         
     def load_data(self):

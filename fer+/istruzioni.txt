@@ -1,0 +1,9 @@
+Per far funzionare lo script, scaricare il file fer2013.csv da l seguente link https://www.kaggle.com/datasets/nicolejyt/facialexpressionrecognition
+In seguito scaricare la seguente repository: https://github.com/microsoft/FERPlus
+Dalla precedente cartella estrarre il dataset fer2013new.csv
+Nella repository progetto-crif è presente un file denominato generatore_microsoft.py, uno script scritto dal team di Microsoft.
+Da terminale lanciare il comando python nome_script.py --base_folder <percorso_cartella_base> --fer_path <percorso_fer2013.csv> --ferplus_path <percorso_fer2013new.csv>.
+
+Una volta lanciato il notebook bisogna specificare nella seconda cella il percorso di immagini e file csv. 
+
+La classe ImageLoader riceve nel costruttore la directory con le immagini e il file csv relativo (esistono directory e file csv relativi a train, test e validation ), e con il metodo load_image() carica di volta in volta il rispettivo split.
