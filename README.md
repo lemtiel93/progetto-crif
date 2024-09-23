@@ -6,3 +6,4 @@ Team members:
 - Alessandro Argentino
 - Alessio Della Rocca
 - Alessio Manfredi
+- Vincenzo Palopoli
