@@ -13,7 +13,6 @@ class ImageLoader:
     def load_image(self, image_path): # Funzione che apre immagine e la normalizza
         image = Image.open(image_path)
         image_array = img_to_array(image)
-        #image_array /= 255
         return image_array
         
     def load_data(self):
@@ -36,8 +35,8 @@ class ImageLoader:
             # Normalizzo i valori della distrubuzione senno funzione perdita esplode
             labels[index] = row[2:].values/10 # # Ignora la colonna 'image name' e 'dimensioni'
         # Converti le immagini e le etichette in array NumPy
-        self.images = np.array(images)
-        self.labels = np.array(labels)
+        self.images = images
+        self.labels = labels
 
         return self.images, self.labels
     
