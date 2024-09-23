@@ -34,8 +34,7 @@ class ImageLoader:
 
             # Carica la distribuzione delle etichette
             # Normalizzo i valori della distrubuzione senno funzione perdita esplode
-            labels[index, :9] = row[2:11].values/10 # # Ignora la colonna 'image name' e 'dimensioni'
-            labels[index, 9] = row[11]
+            labels[index] = row[2:].values/10 # # Ignora la colonna 'image name' e 'dimensioni'
         # Converti le immagini e le etichette in array NumPy
         self.images = np.array(images)
         self.labels = np.array(labels)
@@ -45,7 +44,7 @@ class ImageLoader:
     def random_image(self, num_images = 9):
         random_indices = np.random.choice(self.images.shape[0], num_images, replace=False)
 
-        plt.figure(figsize=(15, 5))
+        plt.figure(figsize=(5, 5))
         
         for i, idx in enumerate(random_indices):
             plt.subplot(1, num_images, i + 1)
