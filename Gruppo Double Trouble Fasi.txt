@@ -6,4 +6,4 @@ Definizione del problema: realizzare un modello riconoscimento emozioni in immag
 5. Valutazione del modello con metriche tipo accuracy, matrice confusione,ecc.. --- Vincenzo
 6. Test e validazione finale. Stima e valutazione performance. --- Della Rocca
 7. Presentazione visiva del modello. -- Della Rocca
-8. Documentazione e report tecnico di scelte fatte e risultati ottenuti --- Vincenzo
+8. Documentazione e report tecnico di scelte fatte e risultati ottenuti --- Vincenzoo
