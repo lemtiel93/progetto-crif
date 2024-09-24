@@ -13,6 +13,7 @@ class ImageLoader:
     def load_image(self, image_path): # Funzione che apre immagine e la normalizza
         image = Image.open(image_path)
         image_array = img_to_array(image)
+        #image_array /= 255
         return image_array
         
     def load_data(self):
@@ -21,7 +22,7 @@ class ImageLoader:
         
         num_samples = labels_df.shape[0]
         images = np.empty((num_samples, 48, 48, 1), dtype=np.float32)  
-        labels = np.empty((num_samples, labels_df.shape[1] - 2), dtype=np.float32)
+        labels = np.empty((num_samples, labels_df.shape[1] - 3), dtype=np.float32)
 
 
         for index, row in labels_df.iterrows(): # Iterows restituisce index e ogni riga come series
@@ -33,10 +34,11 @@ class ImageLoader:
 
             # Carica la distribuzione delle etichette
             # Normalizzo i valori della distrubuzione senno funzione perdita esplode
-            labels[index] = row[2:].values/10 # # Ignora la colonna 'image name' e 'dimensioni'
+            labels[index] = row[2:11].values/10 # # Ignora la colonna 'image name' e 'dimensioni'
         # Converti le immagini e le etichette in array NumPy
         self.images = images
         self.labels = labels
+        
 
         return self.images, self.labels
     
